@@ -1909,3 +1909,20 @@ body {
     .timeline-text { max-width: 700px; }
   
   }
+
+/* ===== CERTIFICATE SECTION only ===== */
+
+/* Make cert card content sit above the ::before overlay — scoped to cert only */
+.Certificate-post-item > a {
+  display: block;
+}
+
+.Certificate-post-item .Certificate-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Yellow title on hover — same as other sections */
+.Certificate-post-item > a:hover .Certificate-item-title {
+  color: var(--orange-yellow-crayola);
+}
